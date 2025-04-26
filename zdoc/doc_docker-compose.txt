@@ -1,0 +1,45 @@
+INICIALIZAR PROYECTO
+
+    docker-compose --env-file .env up --build
+        o
+    docker-compose build
+    docker-compose up
+
+
+HOST DEL PROYECTO INICIALIZADO POR DOCKE-COMPOSE: 
+
+    Frontend (Next.js)	    3000	http://localhost:3000
+    Backend (Spring Boot)	8080	http://localhost:8080
+    PostgreSQL (interno)	5432	jdbc:postgresql://postgres:5432/
+
+
+
+COMANDO UTILES
+
+    1- Reconstruir sin tocar base de datos:
+
+        docker-compose build frontend backend
+        docker-compose up
+        
+        (posible problema de consumo de espacio por imagenes)
+        (debera eliminar cache del docker-compese[ver 3] y eliminar imagenes antiguas[ver 4])
+    
+    2- Forzar reconstrucción limpia:
+
+        docker-compose build --no-cache
+            (se crear nuevas imagenes)
+        docker-compose up
+
+    3- Bajar contenedores y eliminar volúmenes:
+
+        docker-compose down -v
+            (eliminar el cache de docker-compose)
+
+    4- Limpiar imágenes antiguas manualmente (tambien elimina contenedor):
+
+        docker images
+        docker rmi -f [ID_imagen]
+
+    5- Resetear base de datos (opcional, elimina datos de BD):
+
+        docker volume rm polo_it_postgres_data

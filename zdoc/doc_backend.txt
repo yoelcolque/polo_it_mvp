@@ -1,0 +1,46 @@
+INICIALIZAR LOCALMENTE (IntelliJ IDEA):
+
+    Por interfaz de IntelliJ crear New poryecto
+    
+    Abrir el proyecto desde backend/.
+
+    Agregar las siguientes dependencias en Spring Initializr o desde la UI:
+
+        Spring Web → Web > Spring Web
+
+        Spring Data JPA → SQL > Spring Data JPA
+
+        PostgreSQL Driver → SQL > PostgreSQL Driver
+
+        (Opcional) Spring Boot DevTools
+
+
+HOST:
+  http://localhost:8080
+
+
+IMPO! CONFIGURACION 
+
+  CREAR: application.yml (Configuración)
+
+
+"""
+
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:postgresql://postgres:5432/poloit_db
+    username: polo_user
+    password: secreta
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8080
+
+"""
