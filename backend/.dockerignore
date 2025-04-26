@@ -1,0 +1,39 @@
+# Carpeta de compilación de Maven (no la necesitamos copiar)
+target
+
+# Maven wrapper files (solo necesarios algunos)
+.mvn/wrapper/maven-wrapper.jar
+
+# Configuraciones y archivos basura de IDEs
+.idea
+*.iws
+*.iml
+*.ipr
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.vscode
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+build/
+
+# Archivos innecesarios
+.DS_Store
+
+# Logs
+*.log
+
+# Importntee
+# No ignores el "pom.xml" ni el "mvnw" ni el "mvnw.cmd"
+# porque Maven los necesita para construir el proyecto dentro de Docker.
+
+# ⚡ Extra
+# (no es obligatorio, pero se puede incluir para limpiar más)
+*.tmp
