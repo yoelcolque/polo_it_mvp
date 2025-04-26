@@ -1,0 +1,1 @@
+constantes, rutas, endpoints, claves

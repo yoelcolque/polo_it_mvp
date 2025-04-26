@@ -1,0 +1,1 @@
+capa de conexión a la API externa (Spring Boot)

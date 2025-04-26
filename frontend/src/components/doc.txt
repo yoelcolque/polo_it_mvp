@@ -1,0 +1,8 @@
+todos los componentes reutilizables
+
+empleas api? =>
+    import { getAllUsers } from "@/services/userService";
+
+    useEffect(() => {
+        getAllUsers().then(setUsers);
+    }, []);

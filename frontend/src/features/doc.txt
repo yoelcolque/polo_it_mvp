@@ -1,0 +1,1 @@
+cada módulo del sistema (ej: /adopciones, /usuarios, /login)

@@ -1,0 +1,1 @@
+solo entrypoints, layout y page.tsx 
