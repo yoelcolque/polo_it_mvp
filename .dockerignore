@@ -1,0 +1,15 @@
+# IDEs y sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.iml
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Archivos específicos de desarrollo
+docker-compose.override.yml
+docker-compose.dev.yml

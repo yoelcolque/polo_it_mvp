@@ -1,0 +1,18 @@
+node_modules/
+build/
+dist/
+.next/
+target/
+out/
+coverage/
+
+*.log
+*.tmp
+
+.vscode/
+.idea/
+
+
+# (A TENER EN CUENTA.... NO IGNORAMOS .env NI .env.local)
+
+
