@@ -1,21 +1,8 @@
 INICIALIZADAR LOCALMENTE (VS CODE)
-
+    
     cd frontend
-    npx create-next-app@latest . --ts --app --eslint
-
-    IMPO!!
-        Opciones que debe elegir:
-
-            Tailwind CSS: Sí
-            src/ directory: Sí
-            Turbopack: No
-            Alias @/: No
-    
-
-DESARROLLAR LOCALMENTE
-    
     npm install
-    npm run dev
+    npm run dev    
 
 HOST:
     http://localhost:3000

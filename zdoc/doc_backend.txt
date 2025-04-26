@@ -1,19 +1,25 @@
 INICIALIZAR LOCALMENTE (IntelliJ IDEA):
 
-    Por interfaz de IntelliJ crear New poryecto
-    
-    Abrir el proyecto desde backend/.
+    Archivo → Abrir (Open) → Seleccionás la carpeta `backend/`
+        Muy probable IntelliJ lanzara un mensaje, simplemente acepte
+      
+    El SDK empleado debe de ser versiones: 17
 
-    Agregar las siguientes dependencias en Spring Initializr o desde la UI:
+    IMPO! Respecto a la base de datos, puede directamente levantar por docker-compose.
+      Volver a la raiz del proyecto polo_it_mvp y ejecutar:
+        
+        docker-compose up -d postgres
+      
+        (tenga en cuenta que se levantara la DB en segundo plano)
 
-        Spring Web → Web > Spring Web
+    Luego regrese a IntelliJ IDEA y ejecute esto en terminal:
+      
+      ./mvnw spring-boot:run -Dspring-boot.run.profiles=local
 
-        Spring Data JPA → SQL > Spring Data JPA
+    De esta forma estar conectado a la DB
 
-        PostgreSQL Driver → SQL > PostgreSQL Driver
 
-        (Opcional) Spring Boot DevTools
-
+    Buscar la clase BackendApplication.java → Click derecho → Run
 
 HOST:
   http://localhost:8080

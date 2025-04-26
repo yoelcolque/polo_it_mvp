@@ -1,12 +1,28 @@
 INICIALIZAR PROYECTO
+    
+    1- clonar repositorio
 
-    docker-compose --env-file .env up --build
-        o
-    docker-compose build
-    docker-compose up
+    2- IMPOP! una ves creado ir a la carpeta frontend/
+
+        cd frontend
+
+        crear archivo:
+            .env.local
+                (insertar)
+                    """
+                        NEXT_PUBLIC_API_BASE_URL=http://localhost:8080/api
+                    """
+    3- Volver a la raiz del proyecto polo_it_mvp
+
+        cd ..
+
+       Y ejecutar
+
+            docker-compose build
+            docker-compose up
 
 
-HOST DEL PROYECTO INICIALIZADO POR DOCKE-COMPOSE: 
+HOSTs: 
 
     Frontend (Next.js)	    3000	http://localhost:3000
     Backend (Spring Boot)	8080	http://localhost:8080
@@ -14,7 +30,12 @@ HOST DEL PROYECTO INICIALIZADO POR DOCKE-COMPOSE:
 
 
 
-COMANDO UTILES
+
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
+
+COMANDO UTILES (posibles ayudas)
 
     1- Reconstruir sin tocar base de datos:
 
